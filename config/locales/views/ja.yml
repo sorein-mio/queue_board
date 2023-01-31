@@ -26,6 +26,13 @@ ja:
     destroy:
       success: 'ログアウトしました'
   boards:
+    form:
+      register: '登録する'
     index:
       title: '掲示板一覧'
       no_board: '掲示板がありません'
+    new:
+      title: '掲示板作成'
+    create:
+      success: '掲示板を作成しました'
+      aleat: '掲示板を作成できませんでした'
