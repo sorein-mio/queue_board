@@ -12,6 +12,6 @@ end
     board = Board.create!(
         title: Faker::Books::CultureSeries.book,
         body: Faker::Quote.famous_last_words,
-        user_id: User.all.sample.id
+        user_id: User.offset(rand(User.count)).first
     )
 end
