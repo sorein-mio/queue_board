@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap', '~> 4.3.1'
-gem 'font-awesome-sass', '~> 5.11.2'
+gem 'font-awesome-sass', '~> 5.15.1'
 gem 'jquery-rails'
 gem 'sorcery', '0.14.0'
 gem 'pry-byebug'
@@ -58,8 +58,8 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  #gem 'spring'
+  #gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do
