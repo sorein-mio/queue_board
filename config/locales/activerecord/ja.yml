@@ -14,6 +14,7 @@ ja:
       board:
         title: 'タイトル'
         body: '本文'
+        board_image: 'サムネイル'
 
   attributes:
     created_at: '作成日'
