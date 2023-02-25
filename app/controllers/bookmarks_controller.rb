@@ -1,18 +1,14 @@
 class BookmarksController < ApplicationController
   def create
-    bookmark = Bookmark.new(board_id: params[:board_id], user_id: current_user.id)
-    bookmark.save!
-    redirect_back_or_to boards_path, success: t('.registered')
+    board = Board.find(params[:board_id])
+    current_user.bookmark(board)
+    redirect_back fallback_location: root_path, success: t('.success')
   end
 
   def destroy
-    board = Board.find(params[:id])
-    bookmark = board.bookmarks.find_by(user_id: current_user.id)
-    bookmark.destroy!
-    redirect_back_or_to boards_path, success: t('.unregistered')
+    board = current_user.bookmarks.find(params[:id]).board
+    current_user.unbookmark(board)
+    redirect_back fallback_location: root_path, success: t('.success')
   end
 
-  def index
-    @boards = current_user.boards.includes(:bookmarks)
-  end
 end
