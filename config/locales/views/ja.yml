@@ -46,3 +46,11 @@ ja:
   comments:
     form:
       register: '投稿'
+  bookmarks:
+    create:
+      registered: 'ブックマークしました'
+    destroy:
+      unregistered: 'ブックマークを外しました'
+    index:
+      title: 'ブックマーク一覧'
+      no_board: 'ブックマーク中の掲示板がありません'

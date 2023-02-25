@@ -1,0 +1,5 @@
+<li class="list-inline-item">
+    <%= link_to bookmark_path(board), id: "js-bookmark-button-for-board-#{board.id}", method: :delete do %>
+        <%= icon 'fas', 'star' %>
+    <% end %>
+</li>

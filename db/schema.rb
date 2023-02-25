@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_14_051624) do
+ActiveRecord::Schema.define(version: 2023_02_25_043219) do
 
   create_table "boards", force: :cascade do |t|
     t.string "title"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 2023_02_14_051624) do
     t.integer "user_id", null: false
     t.string "board_image"
     t.index ["user_id"], name: "index_boards_on_user_id"
+  end
+
+  create_table "bookmarks", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "board_id"
+    t.index ["board_id"], name: "index_bookmarks_on_board_id"
+    t.index ["user_id"], name: "index_bookmarks_on_user_id"
   end
 
   create_table "comments", force: :cascade do |t|

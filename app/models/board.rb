@@ -1,5 +1,7 @@
 class Board < ApplicationRecord
     belongs_to :user
+    has_many :bookmarks, dependent: :destroy
+    has_many :users, through: :bookmarks
     has_many :comments, dependent: :destroy
     
     validates :title, presence: true

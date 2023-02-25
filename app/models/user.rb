@@ -2,7 +2,9 @@ class User < ApplicationRecord
   authenticates_with_sorcery!
 
   has_many :comments, dependent: :destroy
+  has_many :bookmarks, dependent: :destroy
   has_many :boards, dependent: :destroy
+  has_many :boards, through: :bookmarks
 
   validates :last_name, presence: true, length: { maximum: 255 }
   validates :first_name, presence: true, length: { maximum: 255 }
