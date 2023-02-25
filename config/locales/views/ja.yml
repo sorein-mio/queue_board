@@ -43,6 +43,14 @@ ja:
       title: '掲示板詳細'
     edit:
       title: '掲示板編集'
+    bookmarks:
+      title: 'ブックマーク一覧'
+      no_result: 'ブックマーク中の掲示板がありません'
   comments:
     form:
       register: '投稿'
+  bookmarks:
+    create:
+      success: 'ブックマークしました'
+    destroy:
+      success: 'ブックマークを外しました'
