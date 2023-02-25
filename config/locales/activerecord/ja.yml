@@ -16,6 +16,8 @@ ja:
         title: 'タイトル'
         body: '本文'
         board_image: 'サムネイル'
+        create: '登録する'
+        update: '更新する'
       comment:
         body: 'コメント'
 
