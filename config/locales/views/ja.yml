@@ -5,6 +5,7 @@ ja:
     logout: 'ログアウト'
     to_boards: '掲示板一覧'
     create_boards: '掲示板作成'
+    search_word: '検索ワード'
     message:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -36,7 +37,7 @@ ja:
       register: '登録する'
     index:
       title: '掲示板一覧'
-      no_board: '掲示板がありません'
+      no_board: '1件もありません'
     new:
       title: '掲示板作成'
     show:
