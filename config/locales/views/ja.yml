@@ -6,6 +6,7 @@ ja:
     to_boards: '掲示板一覧'
     create_boards: '掲示板作成'
     search_word: '検索ワード'
+    password_reset: 'パスワードリセット'
     message:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -61,3 +62,11 @@ ja:
       edit: '編集'
     edit:
       title: 'プロフィール編集'
+  password_resets:
+    new:
+      title: 'パスワードリセット申請'
+      submit: '送信'
+    create:
+      success: 'パスワードリセット手順を送信しました'
+    edit:
+      title: 'パスワードリセット'
