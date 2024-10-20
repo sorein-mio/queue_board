@@ -31,8 +31,8 @@
 /config/database.yml
 
 # Ignore sqlite3 files
-db/runteq_normal_development
-db/runteq_normal_test
+db/db_dev
+db/db_test
 
 /public/uploads
 
