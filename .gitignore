@@ -32,7 +32,7 @@
 
 # Ignore sqlite3 files
 db/db_dev
-db/dv_test
+db/db_test
 
 /public/uploads
 
